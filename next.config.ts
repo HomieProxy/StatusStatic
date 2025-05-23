@@ -3,7 +3,7 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export', // Added for static site generation
+  // output: 'export', // Removed to use `next export` command explicitly
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -19,9 +19,8 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-    // When using output: 'export', image optimization is disabled by default.
-    // If you need to ensure images work correctly, you might consider:
-    // unoptimized: true,
+    // When using `next export`, image optimization must be disabled or a custom loader used.
+    unoptimized: true,
   },
 };
 
