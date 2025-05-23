@@ -8,8 +8,8 @@ export default function Home() {
   const otherWebsites = websiteData.filter(site => site.category === 'Others');
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="container mx-auto px-4 py-8 md:px-6 md:py-12 flex-grow">
+    <div>
+      <div className="container mx-auto px-4 py-8 md:px-6 md:py-12">
         <header className="text-center mb-10 md:mb-16 p-6 md:p-8 bg-card shadow-xl rounded-xl">
           <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2">
             Hi, this is the HF permanent site.
@@ -47,7 +47,7 @@ export default function Home() {
           )}
         </main>
       </div>
-      <footer className="text-center py-6 bg-card/50 border-t mt-auto">
+      <footer className="text-center py-6 bg-card/50 border-t">
         <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} HF Status. All rights reserved.</p>
       </footer>
     </div>
