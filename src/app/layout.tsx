@@ -43,15 +43,15 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col">
             <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-              <div className="container flex h-14 max-w-screen-2xl items-center">
-                <div className="mr-4 hidden md:flex">
-                  <a className="mr-6 flex items-center space-x-2" href="/">
-                     <span className="hidden font-bold sm:inline-block">
-                       HF Status
+              <div className="container relative flex h-14 max-w-screen-2xl items-center px-4">
+                <div className="flex-1 flex justify-center items-center"> {/* Changed: Was "mr-4 hidden md:flex" */}
+                  <a className="flex items-center space-x-2" href="/"> {/* Changed: Was "mr-6 flex items-center space-x-2" */}
+                     <span className="font-bold sm:inline-block"> {/* Changed: Was "hidden font-bold sm:inline-block" */}
+                       Homiefroxy Status
                      </span>
                    </a>
                 </div>
-                <div className="flex flex-1 items-center justify-end space-x-2">
+                <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex items-center space-x-2"> {/* Changed: Was "flex flex-1 items-center justify-end space-x-2" */}
                   <ThemeToggle />
                 </div>
               </div>
