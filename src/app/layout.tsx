@@ -47,7 +47,7 @@ export default function RootLayout({
                 <div className="flex-1 flex justify-center items-center"> {/* Changed: Was "mr-4 hidden md:flex" */}
                   <a className="flex items-center space-x-2" href="/"> {/* Changed: Was "mr-6 flex items-center space-x-2" */}
                      <span className="font-bold sm:inline-block"> {/* Changed: Was "hidden font-bold sm:inline-block" */}
-                       Homiefroxy Status
+                       HF Status
                      </span>
                    </a>
                 </div>
